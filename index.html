@@ -1,35 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PMob.in</title>
+  <title>Home | My Personal Site</title>
   <link rel="stylesheet" href="style/styles.css" />
 </head>
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">PMob.in</div>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
+<body>
+  <nav class="navbar">
+    <div class="logo">MySite</div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blogs.html">Blogs</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="mailto:mobinpurushothaman@gmail.com">Contact</a></li>
+	        <li>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">🌓</button>
+      </li>
+    </ul>
+	<div class="dark-mode-toggle">
+  <input type="checkbox" id="darkToggle" />
+</div>
+  </nav>
+
+  <main class="container">
+    <!-- Hero Section -->
     <section class="hero">
-      <h1>Welcome to PMob.in</h1>
-      <p>This is a simple, mobile-friendly homepage with navigation.</p>
+      <h1>Hi, I'm Mobin P</h1>
+      <p>Agile Coach, Writer, and Explorer of High-Performance Teams</p>
+      <a href="blogs.html" class="btn">Explore My Blogs</a>
+    </section>
+
+    <!-- About Teaser Section -->
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I'm a software professional with over 20 years of experience working across startups and large multinational companies. I specialize in helping teams adopt Agile and Scrum to build meaningful products efficiently.
+      </p>
+      <a href="about.html" class="btn">Read More</a>
+    </section>
+
+    <!-- Featured Blogs Section -->
+    <section>
+      <h2>Featured Blogs</h2>
+      <div class="blogs-container">
+        <a href="8 Causes for scrum failure that scrum masters should watch out.html" class="blog-tile">
+          
+          <h3>8 Causes of Scrum Failure the Scrum Masters Should Watch Out For</h3>
+        </a>
+        <!-- Add more blog tiles here as needed -->
+      </div>
+      <a href="blogs.html" class="btn">More Blogs</a>
+    </section>
+
+    <!-- Book Teaser Section -->
+    <section>
+      <h2>My Upcoming Book</h2>
+      <p>
+        I'm currently working on a fiction novel that teaches Scrum through storytelling. It's designed to be an engaging and insightful read for professionals and enthusiasts alike.
+      </p>
+      <a href="#" class="btn" id="notify-btn">Notify Me</a>
+    </section>
+
+    <!-- Contact Call to Action -->
+    <section>
+      <h2>Let's Connect</h2>
+      <p>If you're interested in Agile, Scrum, or just want to say hello — feel free to reach out!</p>
+      <a href="mailto:mobinpurushothaman@gmail.com" class="btn">Contact Me</a>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 PMob.in All rights reserved.</p>
+    <p>&copy; 2025 Mobin P. All rights reserved.</p>
+    <p><a href="mailto:mobinpurushothaman@gmail.com">mobinpurushothaman@gmail.com</a></p>
   </footer>
+    <!-- Notify Me Modal -->
+<div id="notify-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <!-- Embed your actual Google Form below -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYnAxs5Uy-jLo21I_hpQH1JKzmwaVx8bZw9TLp7scSWmh-zw/viewform?embedded=true"
+            width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+  </div>
+</div>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.setAttribute("data-theme", html.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      localStorage.setItem("theme", html.getAttribute("data-theme"));
+    }
+
+    // Load saved theme
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    })();
+</script>
+<script>
+  const modal = document.getElementById("notify-modal");
+  const btn = document.getElementById("notify-btn");
+  const span = document.querySelector(".modal .close");
+
+  btn.onclick = function (e) {
+    e.preventDefault();
+    modal.style.display = "block";
+  }
+
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
 </body>
+
 </html>

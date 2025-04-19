@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs | PMob.in</title>
+  <link rel="stylesheet" href="style/styles.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">PMob.in</div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blogs.html" class="active">Blogs</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">🌓</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section>
+      <h1>My Blog Posts</h1>
+      <p>Insights on Agile, Scrum, and team performance from my personal experiences.</p>
+    </section>
+
+    <section class="blogs-container">
+      <!-- Blog Tile -->
+      <a href="blog-8-causes-of-scrum-failure.html" class="blog-tile">
+       
+        <h3>8 Causes of Scrum Failure the Scrum Masters Should Watch Out For</h3>
+      </a>
+
+      <!-- Sample Blog Tile -->
+      <a href="#" class="blog-tile">
+        
+        <h3>How Agile Mindset Transforms Organizations</h3>
+      </a>
+
+      <a href="#" class="blog-tile">
+        
+        <h3>Scrum Master vs Project Manager – Key Differences</h3>
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mobin P. All rights reserved.</p>
+    <p><a href="mailto:mobinpurushothaman@gmail.com">mobinpurushothaman@gmail.com</a></p>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.setAttribute("data-theme", html.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      localStorage.setItem("theme", html.getAttribute("data-theme"));
+    }
+
+    // Load saved theme
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    })();
+  </script>
+</body>
+</html>
