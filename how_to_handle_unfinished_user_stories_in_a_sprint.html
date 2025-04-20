@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Handle Unfinished User Stories in a Sprint?</title>
+  <link rel="stylesheet" href="style/styles.css" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9TTRNWJ9T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R9TTRNWJ9T');
+</script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img  style="height:64px;" src="images/pmobinLogo.png" /></div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="index.html#aboutme">About Me</a></li>
+        <li><a href="mailto:mobinpurushothaman@gmail.com">Contact</a></li>
+		      <li>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">🌓</button>
+      </li>
+      </ul>
+</div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="blog-header-image">
+      <img style="width:100%;" src="images\unfinishedstories.png" alt="How to Handle Unfinished User Stories in a Sprint?" />
+    </div>
+    <article class="blog-content">
+      <h1>How to Handle Unfinished User Stories in a Sprint?</h1>
+      <p><em>April, 2025</em></p>
+        <section>
+            <p>When a user story or product backlog item in the sprint backlog could not be completed by the end of the sprint, it is called a spillover. Unfinished stories or spilled-over user stories are mostly moved back to the product backlog and will be taken up in the next sprint or a future sprint. If the user story is no longer relevant after the sprint, it could even be canceled.</p>
+
+            <p>The decision on what has to be done with an unfinished user story or spillover is taken by the product owner. This decision depends on the reason the user story could not be completed. Let's look at the different ways in which unfinished user stories are handled in detail.</p>
+
+            <h2>What is Done with the Unfinished User Story Itself</h2>
+            <h3>The User Story is Moved to the Next Sprint</h3>
+            <p>One of the most commonly practiced options when a user story could not be completed within a sprint is to move it back to the backlog and take it up immediately in the next sprint.</p>
+
+            <p>One of the most common causes of an unfinished user story is a lack of time to complete the user story within the sprint. In Scrum, there is no option of extending a sprint to complete an unfinished user story. So, the obvious choice here is to extend the development of the user story to the next sprint and complete it. Following are some examples where the product owner may choose to move the user story to the next sprint:</p>
+            <ul>
+                <li>The user story was underestimated and took more effort than expected</li>
+                <li>Critical bugs associated with the user story were not closed</li>
+                <li>A user story could not be closed due to delays in the completion of dependent tasks</li>
+                <li>Delays due to the unavailability of developers due to unplanned events</li>
+            </ul>
+
+            <p>In this case, the story points allocated to the user story will be considered for velocity calculation only in the sprint in which it was completed, even though its development took place in multiple sprints.</p>
+
+            <h3>User Story is Moved Back to Product Backlog</h3>
+            <p>In this case, an unfinished user story is moved back to the product backlog and is not taken up in the immediate sprint. It is left in the product backlog and will be taken up in an appropriate future sprint. This option is chosen when it is either not practical to take up the user story immediately or there are more priority user stories in the backlog that have to be taken up first. Following are some examples:</p>
+            <ul>
+                <li>The user story could not be completed due to dependencies, which may take longer to be sorted out.</li>
+                <li>Resources required to complete the user story are not available.</li>
+                <li>The user story is not refined enough, needs more clarification, and requires re-estimation.</li>
+                <li>There are more high-priority user stories to be taken up immediately.</li>
+            </ul>
+
+            <p>The story points associated with the incomplete user story are parked and will be included in the future sprint in which it is taken up again.</p>
+
+            <h3>User Story is Split into Multiple User Stories</h3>
+            <p>In this case, the user story that is not complete is split into multiple smaller user stories, and the original story points will be distributed among them proportionally. This is mostly done so that the completed portion of the user story can be separated and marked as completed, and only a small part of the original user story will be considered as incomplete and will be a spillover. This is not a recommended way of handling incomplete user stories, except in special cases such as the following:</p>
+            <ul>
+                <li>The product owner believes that doing a partial release of the completed part will add value to the user.</li>
+                <li>The user story requires re-estimation, and the estimated story points are too large, which brings the necessity of splitting the story in order to reduce it into smaller, manageable chunks.</li>
+                <li>The completed section of the user story is a bug fix or workaround, which is critical.</li>
+            </ul>
+
+            <p>In this case, the story points of the completed story will be included in the current sprint velocity, and the story points of the incomplete user story will be considered in the sprint in which it will be taken up and completed.</p>
+
+            <h3>The User Story is Canceled</h3>
+            <p>In rare cases, changes in business requirements or circumstances will make the user story irrelevant. In such cases, the product owner may choose to cancel the user story. These user stories will be removed from the sprint backlog as well as the product backlog. Following are some examples of such situations:</p>
+            <ul>
+                <li>The user story was a time-sensitive feature and is no longer relevant after the passing of the timeline.</li>
+                <li>The customer no longer requires the feature.</li>
+                <li>It is discovered during the sprint that the feature is technically not feasible.</li>
+            </ul>
+
+            <h2>How to Handle Story Points Associated with Unfinished Stories</h2>
+            <p>One of the most common questions asked in the case of an unfinished user story is, "What happens to the story points of the user story? Will the developer get credit for the effort put into the user story during the sprint?" The answer here is no. The story points of any user story are counted in the sprint velocity only if the story is marked as completed and forms part of the product increment. The reason for this is that the story point is, in a way, an estimation of value delivered, or rather, value to be delivered. Since the incomplete user story is never delivered as part of the product increment, there is no value delivered as part of the user story and hence is not counted.</p>
+
+            <p>For example, if there are 5 user stories in the sprint backlog with 5 story points each, by the end of the sprint, if the team is able to fully complete 4 user stories and 95% of the fifth user story, only 4 user stories could be closed, and one remains open because 5% of the work is still pending. So, the velocity of the team for that sprint will be 20 (4x5) story points.</p>
+
+            <p>Assume that in the next sprint, the team again plans to take up 5 user stories of 5 story points, plus the spillover user story. The total planned story points in this case is 30. However, the effort will be close to 25 story points only, since 95% of the spillover user story is already completed. If the team manages to complete all 6 user stories in the sprint, the sprint velocity will be 30 story points. Now, a question arises: is this a realistic assessment of the team's velocity? In the example we saw, even though the actual effort of the team in both sprints was relatively the same, the velocity of one sprint is 20 story points and the velocity of the other sprint is 30 story points. The answer is that individual sprint velocity does not matter much. While calculating a team's velocity, we consider the average velocity of multiple sprints, and the fluctuations caused by incomplete user stories are evened out in the average. Even in the example we discussed, the average velocity is 25, which is realistic.</p>
+
+            <h2>Should We Demo Unfinished User Stories in Sprint Review?</h2>
+            <p>The short answer to this question is no, we do not consider an incomplete user story in the sprint review. However, the long answer is that, in most cases, an incomplete user story is not demonstrated during the sprint review. However, the user story is discussed when the product owner gives the stakeholders an overview of completed and incomplete user stories in the sprint. There could also be exceptions where the team decides to demo a user story in the sprint review, even if it is not marked as done. Following are some examples:</p>
+            <ul>
+                <li>When the unfinished user story is split into multiple stories, the completed user stories out of them may be taken up for demo.</li>
+                <li>The product owner feels that the feature is important, and showing it early to stakeholders will be beneficial.</li>
+                <li>The feature is ready for demo, but the story could not be marked as complete due to technical reasons (for example, performance testing could not be completed due to unavailability of infrastructure required).</li>
+            </ul>
+
+            <h2>Closing Note</h2>
+            <p>Having unfinished user stories at the end of a sprint is not unusual and is not always a reason to be alarmed. In fact, it is better to have a spillover as a result of having a very stringent definition of done, rather than setting the bar low for the definition of done and marking all user stories as done. It also indicates that the team is pushing their limits and trying to take user stories to the brim of their capacity. It is like an infant falling while learning to walk. What matters is how the team handles the unfinished user story and how they learn to avoid it.</p>
+        </section>
+
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.setAttribute("data-theme", html.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      localStorage.setItem("theme", html.getAttribute("data-theme"));
+    }
+
+    // Load saved theme
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    })();
+</script>
+</body>
+</html>

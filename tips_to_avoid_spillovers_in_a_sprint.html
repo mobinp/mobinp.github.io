@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tips to Avoid Spillovers in a Sprint</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="style/styles.css" />
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9TTRNWJ9T"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R9TTRNWJ9T');
+</script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo"><img  style="height:64px;" src="images/pmobinLogo.png" /></div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="index.html#aboutme">About Me</a></li>
+        <li><a href="mailto:mobinpurushothaman@gmail.com">Contact</a></li>
+		      <li>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">🌓</button>
+      </li>
+      </ul>
+</div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="blog-header-image">
+      <img style="width:100%;" src="images\Spillover.png" alt="Scrum Failure" />
+    </div>
+    <article class="blog-content">
+      <h1>Tips to Avoid Spillovers in a Sprint</h1>
+      <p><em>April, 2025</em></p>
+
+        <section>
+            <h2>What are Spillovers?</h2>
+            <p>In Scrum, if all the Sprint Backlog items are not completed by the end of the sprint, the incomplete items are moved back to the Product Backlog and are referred to as spillovers. These spillover items will be taken up in a future sprint. Having spillovers means the development team could not complete the Product Backlog items they committed to during Sprint Planning. This situation is undesirable for the team. The Scrum team strives to avoid spillovers as much as possible, and as the team matures, the development team becomes better at forecasting effort, thus avoiding spillovers.</p>
+            <p>The following are some of the main reasons for spillovers in a sprint:</p>
+            <ul>
+                <li>Underestimation of effort</li>
+                <li>Overestimation of team capacity</li>
+                <li>Unexpected extra work or blockers</li>
+                <li>Lack of coordination within the team</li>
+                <li>Lack of focus</li>
+                <li>Taking up unclear Product Backlog items in the sprint, and so on.</li>
+            </ul>
+            <p>Let us now look at how spillovers can be avoided.</p>
+        </section>
+
+        <section>
+            <h2>Do Effective Capacity Planning</h2>
+            <p>Capacity planning is an assessment done by the team during Sprint Planning to determine how many story points the team can take up in a particular sprint. For those unfamiliar with story points, they are a unit of measure for the effort required to complete a feature using relative sizing. If a team is not able to reasonably assess their capacity, it is likely that they will either over-commit or under-commit on the features they will complete in the sprint.</p>
+            <p>In order to effectively plan the team’s capacity, the following factors need to be considered:</p>
+            <ul>
+                <li>Number of working days in the sprint</li>
+                <li>Any planned leaves or vacations for team members</li>
+                <li>Availability of shared resources</li>
+                <li>Hours to be dedicated for backlog refinement and other events like Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective</li>
+                <li>Average velocity of previous sprints</li>
+            </ul>
+            <p>Capacity of the team is calculated in story points. It is common practice to calculate the capacity of a team by projecting the man hours or days available in this sprint and deriving a proportionate story point based on the team’s average velocity and average man hours or days spent in the previous sprint. The formula would be:</p>
+            <pre>Capacity = Projected man hours for this sprint * (Average velocity of the team / Average man hours spent in the previous sprint)</pre>
+        </section>
+
+        <section>
+            <h2>Take Up Only Thoroughly Refined Product Backlog Items in a Sprint</h2>
+            <p>Developers should only take up Product Backlog items in a sprint if they are clear and all the necessary information required for their implementation is available. Backlog items created by the Product Owner become mature only when they are explained to developers and discussed during the refinement process. This brings the required clarity, enabling the development team to provide an effort estimate.</p>
+            <p>To ensure only the right backlog items are brought up in Sprint Planning, the team often agrees on a Definition of Ready (DOR), which sets the criteria that need to be fulfilled for a Product Backlog item to be taken up in a sprint. Below are a few examples of what can be included in the Definition of Ready:</p>
+            <ul>
+                <li>The backlog item is explained by the Product Owner to the development team and all questions are answered</li>
+                <li>The Product Backlog item has acceptance criteria based on which the feature can be validated</li>
+                <li>The Product Backlog item is estimated in story points</li>
+                <li>The estimate of the backlog item does not exceed 8 story points. If it exceeds, it is subdivided into smaller stories or backlog items</li>
+                <li>There is no blocker dependency</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Effectively Plan the Work During Sprint Planning</h2>
+            <p>Sprint Planning consists of two main activities:</p>
+            <ol>
+                <li>Determining What to Do: Deciding which Product Backlog items will be taken up in the sprint.</li>
+                <li>Determining How to Do: Analyzing the backlog items and coming up with a plan on how to get them done.</li>
+            </ol>
+            <p>The first two points we discussed take care of the "What to Do" part, but the "How to Do" part is not given the importance it deserves by many teams, which could lead to spillovers in the sprint. Planning involves two main functions:</p>
+            <ol>
+                <li>Analyzing the backlog item and dividing it into smaller tasks</li>
+                <li>Estimating the effort required for each task in hours</li>
+            </ol>
+            <p>Here are some points to consider while creating tasks:</p>
+            <ul>
+                <li>Try to divide the backlog items into as small tasks as possible, never exceeding one day of effort</li>
+                <li>If multiple developers can work on a task, try to create separate tasks for each person, rather than having multiple people work on a single task</li>
+                <li>Look into the "Definition of Done" for the backlog item and create a task for each point in the DoD in addition to the regular development task (e.g., code review, automated tests, performance testing, Product Owner review, etc.)</li>
+            </ul>
+            <p>Proper planning forces the developer to think about the practical aspects of requirements that may be overlooked during the refinement process. At this stage, if the developer feels that the initial assessment of effort was not sufficient, there is an opportunity to negotiate with the Product Owner and adjust the plan. This will reduce the chances of underestimation and uncertainties, helping to avoid spillovers in the sprint.</p>
+        </section>
+
+        <section>
+            <h2>Learn from Past Mistakes</h2>
+            <p>It is normal to have spillovers in the early days of Scrum. However, after a few sprints, the team learns from their mistakes and matures, which enables them to avoid spillovers in future sprints. Inspection and adaptation are two of the three pillars of the Scrum framework, and the Sprint Retrospective is a Scrum event specifically used for inspecting and adapting processes.</p>
+            <p>If spillovers occur frequently, they should be taken up in the Retrospective meeting, where the root causes of the spillovers can be analyzed. This helps identify and fix issues related to processes that contribute to spillovers.</p>
+        </section>
+
+        <section>
+            <h2>Reduce Work in Progress</h2>
+            <p>Spillovers happen when the team does not have enough time to complete all the agreed backlog items. The reason for this shortage of time could vary, but if such situations arise, the focus should be on reducing the number of Product Backlog items the team is working on in parallel.</p>
+            <p>Let’s try to understand this with an example. Assume that in a sprint, the team has committed to 5 backlog items totaling 25 story points (for simplicity, let’s assume each backlog item is estimated at 5 points). The team starts working on all items simultaneously. As the sprint nears its end, the team realizes their actual capacity is only 20 story points. Since work on all backlog items was happening in parallel, by the end of the sprint, none of the items is completed. The team's velocity for the sprint will be 0 as a result.</p>
+            <p>Now let’s assume the team decides to cap the maximum number of backlog items worked on in parallel to 3. In this case, the team completes the first set of 3 backlog items (15 story points), but does not complete the next 2. Thus, the team's velocity will be 15 instead of 0.</p>
+            <p>If the team focuses all its effort on one backlog item at a time, they will complete 4 backlog items with only one spillover. This example shows how reducing work in progress can reduce spillovers, even if all other factors are the same. In the real world, it may not be efficient for the entire team to work on just one backlog item at a time, so the team will need to find an optimal level where efficiency is not compromised, but work in progress is reduced.</p>
+        </section>
+
+        <section>
+            <h2>Effectively Use the Process of Inspect and Adapt in Daily Scrum</h2>
+            <p>The Daily Scrum is an important Scrum event where, on a daily basis, the team inspects and adapts their progress toward the Scrum goal and takes corrective action if necessary. Many times, the Daily Scrum is conducted mechanically without understanding its core principles. This can lead to the team losing focus on the bigger picture, resulting in spillovers.</p>
+            <p>Spillovers can be avoided if deviations are detected early in the sprint and corrective actions are taken. Here are some good practices to follow during the Daily Scrum to avoid spillovers:</p>
+            <ul>
+                <li>Keep the Burndown Chart visible to all team members during the Daily Scrum, review it, and make it a discussion point</li>
+                <li>Scrum Masters should ensure all impediments are addressed and that the team members are not stuck</li>
+                <li>Team members should be transparent and ask for help if needed</li>
+                <li>Stay focused on the Sprint Goal</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>Avoiding spillovers in a sprint is essential, and we have discussed several tips to help achieve this. However, this does not mean that the team should try to game the process to mark Sprint Backlog items as complete. The Scrum team should strive to close all the committed backlog items in a sprint, but the Product Backlog items should be complete in their true sense and should deliver value to their users.</p>
+        </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MySite. All rights reserved.</p>
+  </footer>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.setAttribute("data-theme", html.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      localStorage.setItem("theme", html.getAttribute("data-theme"));
+    }
+
+    // Load saved theme
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    })();
+</script>
+</body>
+</html>
