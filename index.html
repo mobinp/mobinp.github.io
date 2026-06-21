@@ -5,90 +5,127 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | P Mob.in</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   <link rel="stylesheet" href="style/styles.css" />
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-R9TTRNWJ9T"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-R9TTRNWJ9T');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9TTRNWJ9T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R9TTRNWJ9T');
+  </script>
 </head>
 
 <body>
+  <!-- Navigation Bar -->
   <nav class="navbar">
-    <a href="index.html" class="logo"><img style="height:64px;" src="images/pmobinLogo.png" /></a>
+    <a href="index.html" class="logo">
+      <img src="images/pmobinLogo.png" alt="PMob.in Logo">
+    </a>
     <input type="checkbox" id="menu-toggle" class="menu-toggle" />
     <label for="menu-toggle" class="menu-icon">&#9776;</label>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="https://mobinp.medium.com/">Blogs</a></li>
-      <li><a href="https://mobinp.medium.com/about">About Me</a></li>
+      <li><a href="about.html">About Me</a></li>
       <li><a href="mailto:mobinpurushothaman@gmail.com">Contact</a></li>
-	        <li>
+      <li>
         <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">🌓</button>
       </li>
     </ul>
-
-</div>
   </nav>
 
+  <!-- Main Content -->
   <main class="container">
     <!-- Hero Section -->
     <section class="hero" id="aboutme">
-      <h1>Hi, I'm Mobin P</h1>
-      <p>Agile Coach, Writer, and Explorer of High-Performance Teams</p>
-      <a href="blogs.html" class="btn">Explore My Blogs</a>
+      <img src="images/banner.png" alt="PMob.in Banner" class="hero-banner-image">
     </section>
 
-    <!-- About Teaser Section -->
+    <!-- About Section -->
     <section>
-      <h2  >About Me</h2>
-      <p>
-        I'm a software professional with over 20 years of experience working across startups and large multinational companies. I specialize in helping teams adopt Agile and Scrum to build meaningful products efficiently.
-      </p>
-      <a href="https://mobinp.medium.com/about" class="btn">Read More</a>
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          With 20+ years of experience in software development and delivery leadership, I help organizations build high-performing teams, adopt Agile practices, and deliver successful products. My background spans software engineering, solution architecture, project management, Scrum coaching, and product leadership across multiple industries. I am also the author of My Agile Journey with Scrum, a story-driven book that teaches Scrum through real-world experiences.
+        </p>
+        <a href="about.html" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="p-4">
+      <h2 class="text-center mb-4">My Impact</h2>
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Projects Delivered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">Clients Served</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Professionals Mentored</div>
+        </div>
+      </div>
     </section>
 
     <!-- Featured Blogs Section -->
     <section>
-      <h2>Featured Blogs</h2>
-      <div class="blogs-container">
-	   <a href="https://mobinp.medium.com/scrum-roles-events-and-artifacts-f3e96f68847d" class="blog-tile">
-        <img style="width:100%;" src="images\scrum.png" alt="Scrum: Roles, Events and Artifacts" />
-        <h3>Scrum: Roles, Events and artifacts</h3>
-      </a>
-	  			  		 <a href="https://mobinp.medium.com/timeboxing-scrum-events-91bc18d6b786" class="blog-tile">
-          <img style="width:100%;" src="images\timeboxing.png" alt="Scrum Failure" />
-          <h3>Timeboxing Scrum Events</h3>
-        </a>
-		 
-		
-        <!-- Add more blog tiles here as needed -->
+      <div class="section-title">
+        <h2>Featured Blogs</h2>
+        <p>Explore my latest thoughts on Agile, Scrum, and high-performance teams</p>
       </div>
-      <a href="https://mobinp.medium.com/" class="btn">More Blogs</a>
+      <div class="blogs-container">
+        <a href="https://mobinp.medium.com/scrum-roles-events-and-artifacts-f3e96f68847d" class="blog-tile">
+          <img src="images/scrum.png" alt="Scrum: Roles, Events and Artifacts">
+          <div class="blog-tile-content">
+            <h3>Scrum: Roles, Events and Artifacts</h3>
+            <p>Understand the fundamental components that make Scrum an effective framework for managing complex projects.</p>
+          </div>
+        </a>
+        <a href="https://mobinp.medium.com/timeboxing-scrum-events-91bc18d6b786" class="blog-tile">
+          <img src="images/timeboxing.png" alt="Timeboxing Scrum Events">
+          <div class="blog-tile-content">
+            <h3>Timeboxing Scrum Events</h3>
+            <p>Learn how to maximize productivity by properly timeboxing your Scrum ceremonies and events.</p>
+          </div>
+        </a>
+      </div>
+      <div class="text-center mt-4">
+        <a href="https://mobinp.medium.com/" class="btn">View All Blogs</a>
+      </div>
     </section>
 
-    <!-- Book Teaser Section -->
+    <!-- Book Section -->
     <section>
-      <h2>My Book</h2>
-      <p>
-        Learn the foundational concepts that power high-performing Agile teams. This section introduces you to the core principles of Scrum in a way that's easy to understand—even if you're new to Agile.
-      </p>
-      <a href="https://myagilejourneywithscrum.com/" class="btn" >Knoe More</a>
+      <div class="card">
+        <h2>My Book</h2>
+        <p>
+          Learn the foundational concepts that power high-performing Agile teams. This comprehensive guide introduces you to the core principles of Scrum in a way that's easy to understand—even if you're new to Agile. Discover practical strategies that have helped teams deliver value faster and work more efficiently.
+        </p>
+        <a href="https://myagilejourneywithscrum.com/" class="btn btn-primary">Know More</a>
+      </div>
     </section>
 
-    <!-- Contact Call to Action -->
-    <section>
-      <h2>Let's Connect</h2>
-      <p>If you're interested in Agile, Scrum, or just want to say hello — feel free to reach out!</p>
-      <a href="mailto:mobinpurushothaman@gmail.com" class="btn">Contact Me</a>
+    <!-- Call to Action Section -->
+    <section class="p-4">
+      <div style="text-align: center; background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white; padding: 3rem; border-radius: var(--radius-md);">
+        <h2 style="color: white; margin-bottom: 1rem;">Let's Connect</h2>
+        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin-bottom: 1.5rem;">If you're interested in Agile, Scrum, or just want to say hello — feel free to reach out!</p>
+        <a href="mailto:mobinpurushothaman@gmail.com" class="btn">Contact Me</a>
+      </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 PMob.in. All rights reserved.</p>
   </footer>
@@ -121,19 +158,29 @@
   const btn = document.getElementById("notify-btn");
   const span = document.querySelector(".modal .close");
 
-  btn.onclick = function (e) {
-    e.preventDefault();
-    modal.style.display = "block";
+  if (btn) {
+    btn.onclick = function (e) {
+      e.preventDefault();
+      modal.style.display = "block";
+    }
   }
 
-  span.onclick = function () {
-    modal.style.display = "none";
+  if (span) {
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
   }
 
   window.onclick = function (event) {
     if (event.target === modal) {
       modal.style.display = "none";
     }
+  }
+</script>
+
+</body>
+
+</html>
   }
 </script>
 

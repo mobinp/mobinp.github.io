@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | P Mob.in</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="style/styles.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9TTRNWJ9T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R9TTRNWJ9T');
+  </script>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="images/pmobinLogo.png" alt="PMob.in Logo">
+    </a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="https://mobinp.medium.com/">Blogs</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="mailto:mobinpurushothaman@gmail.com">Contact</a></li>
+      <li>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark Mode">🌓</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Main About Section -->
+    <section>
+      <div class="card">
+        <h2>About Mobin P</h2>
+        <p>
+          Mobin P is a Product Manager, Agile Delivery Leader, Scrum Coach, Author, and Technology Professional with more than 20 years of experience helping organizations build successful products, high-performing teams, and sustainable delivery cultures.
+        </p>
+        <p>
+          Over the course of his career, he has successfully delivered more than 50 software projects, served over 30 clients across multiple industries, and mentored more than 100 technology professionals. His experience spans software development, solution architecture, project management, Agile coaching, product leadership, and delivery governance.
+        </p>
+        <p>
+          Mobin's professional journey began as a software developer and evolved through roles including Lead Developer, Solution Architect, Project Manager, Scrum Master, Agile Coach, Chief Architect, and Product Manager. This unique combination of technical depth and leadership experience enables him to bridge the gap between business strategy and technology execution.
+        </p>
+        <p>
+          He has worked with organizations ranging from startups to large multinational enterprises, leading cross-functional teams of up to 32 members and delivering solutions across domains such as automotive, finance, insurance, media, recruitment, hospitality, and business operations. His expertise includes Scrum, Agile transformation, product management, stakeholder engagement, delivery excellence, team coaching, and continuous improvement.
+        </p>
+        <p>
+          With a strong technical background in .NET, Node.js, cloud technologies, DevOps practices, and enterprise architecture, Mobin believes that successful product delivery requires a balance of people, process, and technology. He is passionate about helping teams embrace Agile principles while maintaining a relentless focus on customer value and business outcomes.
+        </p>
+        <p>
+          Beyond his professional work, Mobin is a dedicated Agile advocate and thought leader. He is the author of <em>My Agile Journey with Scrum</em>, a unique fiction-based book that teaches Scrum concepts through storytelling and real-world experiences. Through his writing, speaking engagements, blog articles, and educational content, he continues to help professionals and organizations better understand Agile practices and modern product development.
+        </p>
+        <p>
+          Today, Mobin focuses on empowering teams, mentoring future leaders, and helping organizations transform the way they build and deliver products.
+        </p>
+        <p style="text-align: center; font-size: 1.2rem; font-weight: 600; color: var(--primary-color); margin-top: 2rem;">
+          Delivering Products. Building Teams. Transforming Organizations.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 PMob.in. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      html.setAttribute("data-theme", html.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      localStorage.setItem("theme", html.getAttribute("data-theme"));
+    }
+
+    // Load saved theme
+    (function () {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) {
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      }
+    })();
+  </script>
+</body>
+
+</html>
